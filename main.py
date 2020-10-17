@@ -7,7 +7,13 @@ links = []
 last_index = (len(links) - 1)
 download_ok = True
 
+# get save path
+if not os.path.exists('downloads'):
+    os.makedirs('downloads')
 save_path = 'downloads'
+
+print("\n *** SimPyDl ***\n")
+print("Enter 'exit' in nothing else to download.\n")
 
 download_url = input("file #1: Enter download url: ")
 
@@ -57,7 +63,7 @@ def start_download(confirm_start):
                 if download_ok:
                     print("\nEverything downloaded successfully!")
     else:
-        print("\nOK! Run the cell again if something to download.\n")
+        print("\nOK! Run the program again if something else to download.\n")
 
 
 # start process
