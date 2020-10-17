@@ -17,7 +17,7 @@ while download_url != 'exit':
     download_url = input(f"file #{len(links) + 1}: Enter download url: ")
     links.append(download_url)
 
-confirm_start = input("Start downloads? Enter 'y' to agree: ")
+confirm_start = input("\nStart downloads? Enter 'y' to agree: ")
 
 
 # download function
@@ -62,4 +62,3 @@ def start_download(confirm_start):
 
 # start process
 start_download(confirm_start);
-
